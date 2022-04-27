@@ -1,5 +1,10 @@
 package com.thealgorithms.searches;
 
+import org.checkerframework.checker.index.qual.*;
+import org.checkerframework.checker.units.qual.Length;
+import org.checkerframework.common.value.qual.ArrayLen;
+import org.checkerframework.common.value.qual.IntRange;
+
 import java.util.Scanner;
 
 /**
@@ -28,23 +33,32 @@ public class SaddlebackSearch {
      * @return The index(row and column) of the element if found. Else returns
      * -1 -1.
      */
-    private static int[] find(int arr[][], int row, int col, int key) {
+    private static int @ArrayLen(2) [] find(int[][] arr,  final @LTLengthOf("#1") int row, final @NonNegative int col, int key) {
 
         // array to store the answer row and column
-        int ans[] = {-1, -1};
+        int @ArrayLen(2) [] ans = {-1, -1};
         if (row < 0 || col >= arr[row].length) {
             return ans;
         }
-        if (arr[row][col] == key) {
-            ans[0] = row;
-            ans[1] = col;
+//        need this to add annotation
+        final @NonNegative int checkedRow = row;
+//        needed because it doesn't understand that arr[checkedRow] == a[row]
+        @SuppressWarnings("index")
+        final @IndexFor(value = "arr[checkedRow]") int checkedCol = col;
+
+        int[] a = arr[checkedRow];
+        int b = arr[checkedRow][checkedCol];
+
+        if (arr[checkedRow][checkedCol] == key) {
+            ans[0] = checkedRow;
+            ans[1] = checkedCol;
             return ans;
         } // if the current element is greater than the given element then we move up
-        else if (arr[row][col] > key) {
-            return find(arr, row - 1, col, key);
+        else if (arr[checkedRow][checkedCol] > key) {
+            return find(arr, checkedRow - 1, checkedCol, key);
         }
         // else we move right
-        return find(arr, row, col + 1, key);
+        return find(arr, checkedRow, checkedCol + 1, key);
     }
 
     /**
@@ -55,17 +69,26 @@ public class SaddlebackSearch {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         Scanner sc = new Scanner(System.in);
-        int arr[][];
-        int i, j, rows = sc.nextInt(), col = sc.nextInt();
-        arr = new int[rows][col];
+        int i;
+//        here the tool is rightfully complaining because there is no check on the user input
+        @SuppressWarnings("index")
+        @Positive int rows = sc.nextInt();
+        @SuppressWarnings("index")
+        @Positive  int col = sc.nextInt();
+        int[][] arr = new int[rows][col];
         for (i = 0; i < rows; i++) {
-            for (j = 0; j < col; j++) {
-                arr[i][j] = sc.nextInt();
+            for (int j = 0; j < col; j++) {
+                @SuppressWarnings("index")
+                @IndexFor("arr[i]")
+                final int tmp_j = j;
+                 arr[i][tmp_j] = sc.nextInt();
             }
         }
+
+
         int ele = sc.nextInt();
         // we start from bottom left corner
-        int ans[] = find(arr, rows - 1, 0, ele);
+        int[] ans = find(arr, rows - 1, 0, ele);
         System.out.println(ans[0] + " " + ans[1]);
         sc.close();
     }

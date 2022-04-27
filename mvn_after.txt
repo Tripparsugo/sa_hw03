@@ -38,46 +38,6 @@
 [INFO] -------------------------------------------------------------
 [ERROR] COMPILATION ERROR : 
 [INFO] -------------------------------------------------------------
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/maths/KaprekarNumbers.java:[38,53] error: [argument] incompatible argument for parameter endIndex of substring.
-  found   : @GTENegativeOne int
-  required: @NonNegative int
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/maths/KaprekarNumbers.java:[44,21] error: [argument] incompatible argument for parameter endIndex of substring.
-  found   : @LowerBoundUnknown int
-  required: @NonNegative int
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/maths/KaprekarNumbers.java:[46,112] error: [argument] incompatible argument for parameter beginIndex of substring.
-  found   : @LowerBoundUnknown int
-  required: @NonNegative int
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/searches/SaddlebackSearch.java:[35,34] error: [array.access.unsafe.high] Potentially unsafe array access: the index could be larger than the array's bound
-  found   : @UpperBoundUnknown int
-  required: @IndexFor("arr") or @LTLengthOf("arr") -- an integer less than arr's length
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/searches/SaddlebackSearch.java:[38,16] error: [array.access.unsafe.high] Potentially unsafe array access: the index could be larger than the array's bound
-  found   : @UpperBoundUnknown int
-  required: @IndexFor("arr") or @LTLengthOf("arr") -- an integer less than arr's length
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/searches/SaddlebackSearch.java:[38,21] error: [array.access.unsafe.low] Potentially unsafe array access: the index could be negative.
-  found   : @LowerBoundUnknown int
-  required: an integer >= 0 (@NonNegative or @Positive)
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/searches/SaddlebackSearch.java:[43,21] error: [array.access.unsafe.high] Potentially unsafe array access: the index could be larger than the array's bound
-  found   : @UpperBoundUnknown int
-  required: @IndexFor("arr") or @LTLengthOf("arr") -- an integer less than arr's length
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/searches/SaddlebackSearch.java:[43,26] error: [array.access.unsafe.low] Potentially unsafe array access: the index could be negative.
-  found   : @LowerBoundUnknown int
-  required: an integer >= 0 (@NonNegative or @Positive)
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/searches/SaddlebackSearch.java:[60,22] error: [array.length.negative] Variable used in array creation could be negative.
-  found   : @LowerBoundUnknown int
-  required: an integer >= 0 (@NonNegative or @Positive)
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/searches/SaddlebackSearch.java:[60,28] error: [array.length.negative] Variable used in array creation could be negative.
-  found   : @LowerBoundUnknown int
-  required: an integer >= 0 (@NonNegative or @Positive)
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/searches/SaddlebackSearch.java:[63,23] error: [array.access.unsafe.high.range] Potentially unsafe array access: the index could be larger than the array's bound
-  index type found: @IntRange(from=-2147483648) int
-  array type found: @UnknownVal int @UnknownVal []
-  required        : index of type @IndexFor("arr[i]") or @LTLengthOf("arr[i]"), or array of type @MinLen(-9223372036854775808)
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/searches/SaddlebackSearch.java:[69,31] error: [array.access.unsafe.high.constant] Potentially unsafe array access: the constant index 0 could be larger than the array's bound
-  found   : @UnknownVal int @UnknownVal []
-  required: @MinLen(1) -- an array guaranteed to have at least 1 elements
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/searches/SaddlebackSearch.java:[69,46] error: [array.access.unsafe.high.constant] Potentially unsafe array access: the constant index 1 could be larger than the array's bound
-  found   : @UnknownVal int @UnknownVal []
-  required: @MinLen(2) -- an array guaranteed to have at least 2 elements
 [ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/maths/DeterminantOfMatrix.java:[16,20] error: [array.access.unsafe.high.constant] Potentially unsafe array access: the constant index 0 could be larger than the array's bound
   found   : @UnknownVal int @UnknownVal [] @UnknownVal []
   required: @MinLen(1) -- an array guaranteed to have at least 1 elements
@@ -2092,11 +2052,11 @@
 [ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/misc/Sort012D.java:[19,26] error: [array.length.negative] Variable used in array creation could be negative.
   found   : @LowerBoundUnknown int
   required: an integer >= 0 (@NonNegative or @Positive)
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/misc/Sort012D.java:[34,29] error: [array.access.unsafe.high.range] Potentially unsafe array access: the index could be larger than the array's bound
+[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/misc/Sort012D.java:[35,29] error: [array.access.unsafe.high.range] Potentially unsafe array access: the index could be larger than the array's bound
   index type found: @IntRange(from=-2147483648) int
   array type found: @UnknownVal int @UnknownVal []
   required        : index of type @IndexFor("a") or @LTLengthOf("a"), or array of type @MinLen(-9223372036854775808)
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/misc/Sort012D.java:[35,22] error: [array.access.unsafe.high.range] Potentially unsafe array access: the index could be larger than the array's bound
+[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/misc/Sort012D.java:[36,22] error: [array.access.unsafe.high.range] Potentially unsafe array access: the index could be larger than the array's bound
   index type found: @IntRange(from=-2147483648) int
   array type found: @UnknownVal int @UnknownVal []
   required        : index of type @IndexFor("a") or @LTLengthOf("a"), or array of type @MinLen(-9223372036854775808)
@@ -7830,55 +7790,15 @@
 [ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/others/Implementing_auto_completing_features_using_trie.java:[120,37] error: [array.access.unsafe.high] Potentially unsafe array access: the index could be larger than the array's bound
   found   : @UpperBoundUnknown int
   required: @IndexFor("pCrawl.children") or @LTLengthOf("pCrawl.children") -- an integer less than pCrawl.children's length
-[INFO] 2501 errors 
+[INFO] 2488 errors 
 [INFO] -------------------------------------------------------------
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  40.625 s
-[INFO] Finished at: 2022-04-27T19:05:32+02:00
+[INFO] Total time:  39.873 s
+[INFO] Finished at: 2022-04-27T21:20:10+02:00
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project Java: Compilation failure: Compilation failure: 
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/maths/KaprekarNumbers.java:[38,53] error: [argument] incompatible argument for parameter endIndex of substring.
-[ERROR]   found   : @GTENegativeOne int
-[ERROR]   required: @NonNegative int
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/maths/KaprekarNumbers.java:[44,21] error: [argument] incompatible argument for parameter endIndex of substring.
-[ERROR]   found   : @LowerBoundUnknown int
-[ERROR]   required: @NonNegative int
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/maths/KaprekarNumbers.java:[46,112] error: [argument] incompatible argument for parameter beginIndex of substring.
-[ERROR]   found   : @LowerBoundUnknown int
-[ERROR]   required: @NonNegative int
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/searches/SaddlebackSearch.java:[35,34] error: [array.access.unsafe.high] Potentially unsafe array access: the index could be larger than the array's bound
-[ERROR]   found   : @UpperBoundUnknown int
-[ERROR]   required: @IndexFor("arr") or @LTLengthOf("arr") -- an integer less than arr's length
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/searches/SaddlebackSearch.java:[38,16] error: [array.access.unsafe.high] Potentially unsafe array access: the index could be larger than the array's bound
-[ERROR]   found   : @UpperBoundUnknown int
-[ERROR]   required: @IndexFor("arr") or @LTLengthOf("arr") -- an integer less than arr's length
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/searches/SaddlebackSearch.java:[38,21] error: [array.access.unsafe.low] Potentially unsafe array access: the index could be negative.
-[ERROR]   found   : @LowerBoundUnknown int
-[ERROR]   required: an integer >= 0 (@NonNegative or @Positive)
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/searches/SaddlebackSearch.java:[43,21] error: [array.access.unsafe.high] Potentially unsafe array access: the index could be larger than the array's bound
-[ERROR]   found   : @UpperBoundUnknown int
-[ERROR]   required: @IndexFor("arr") or @LTLengthOf("arr") -- an integer less than arr's length
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/searches/SaddlebackSearch.java:[43,26] error: [array.access.unsafe.low] Potentially unsafe array access: the index could be negative.
-[ERROR]   found   : @LowerBoundUnknown int
-[ERROR]   required: an integer >= 0 (@NonNegative or @Positive)
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/searches/SaddlebackSearch.java:[60,22] error: [array.length.negative] Variable used in array creation could be negative.
-[ERROR]   found   : @LowerBoundUnknown int
-[ERROR]   required: an integer >= 0 (@NonNegative or @Positive)
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/searches/SaddlebackSearch.java:[60,28] error: [array.length.negative] Variable used in array creation could be negative.
-[ERROR]   found   : @LowerBoundUnknown int
-[ERROR]   required: an integer >= 0 (@NonNegative or @Positive)
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/searches/SaddlebackSearch.java:[63,23] error: [array.access.unsafe.high.range] Potentially unsafe array access: the index could be larger than the array's bound
-[ERROR]   index type found: @IntRange(from=-2147483648) int
-[ERROR]   array type found: @UnknownVal int @UnknownVal []
-[ERROR]   required        : index of type @IndexFor("arr[i]") or @LTLengthOf("arr[i]"), or array of type @MinLen(-9223372036854775808)
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/searches/SaddlebackSearch.java:[69,31] error: [array.access.unsafe.high.constant] Potentially unsafe array access: the constant index 0 could be larger than the array's bound
-[ERROR]   found   : @UnknownVal int @UnknownVal []
-[ERROR]   required: @MinLen(1) -- an array guaranteed to have at least 1 elements
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/searches/SaddlebackSearch.java:[69,46] error: [array.access.unsafe.high.constant] Potentially unsafe array access: the constant index 1 could be larger than the array's bound
-[ERROR]   found   : @UnknownVal int @UnknownVal []
-[ERROR]   required: @MinLen(2) -- an array guaranteed to have at least 2 elements
 [ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/maths/DeterminantOfMatrix.java:[16,20] error: [array.access.unsafe.high.constant] Potentially unsafe array access: the constant index 0 could be larger than the array's bound
 [ERROR]   found   : @UnknownVal int @UnknownVal [] @UnknownVal []
 [ERROR]   required: @MinLen(1) -- an array guaranteed to have at least 1 elements
@@ -9893,11 +9813,11 @@
 [ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/misc/Sort012D.java:[19,26] error: [array.length.negative] Variable used in array creation could be negative.
 [ERROR]   found   : @LowerBoundUnknown int
 [ERROR]   required: an integer >= 0 (@NonNegative or @Positive)
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/misc/Sort012D.java:[34,29] error: [array.access.unsafe.high.range] Potentially unsafe array access: the index could be larger than the array's bound
+[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/misc/Sort012D.java:[35,29] error: [array.access.unsafe.high.range] Potentially unsafe array access: the index could be larger than the array's bound
 [ERROR]   index type found: @IntRange(from=-2147483648) int
 [ERROR]   array type found: @UnknownVal int @UnknownVal []
 [ERROR]   required        : index of type @IndexFor("a") or @LTLengthOf("a"), or array of type @MinLen(-9223372036854775808)
-[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/misc/Sort012D.java:[35,22] error: [array.access.unsafe.high.range] Potentially unsafe array access: the index could be larger than the array's bound
+[ERROR] /Users/windowsisbetter/Documents/Computer_science/msde/s2/software_analysis/HWS/HW3/Java-master/src/main/java/com/thealgorithms/misc/Sort012D.java:[36,22] error: [array.access.unsafe.high.range] Potentially unsafe array access: the index could be larger than the array's bound
 [ERROR]   index type found: @IntRange(from=-2147483648) int
 [ERROR]   array type found: @UnknownVal int @UnknownVal []
 [ERROR]   required        : index of type @IndexFor("a") or @LTLengthOf("a"), or array of type @MinLen(-9223372036854775808)

@@ -1,4 +1,6 @@
 package com.thealgorithms.maths;
+import org.checkerframework.checker.index.qual.NonNegative;
+
 import java.math.BigInteger;
 import java.util.*;
 
@@ -33,17 +35,23 @@ public class KaprekarNumbers {
 			BigInteger leftDigits1 = new BigInteger("0");
 			BigInteger leftDigits2;
 			if(numberSquared.toString().contains("0")){
+//				can't be -1 if contained
+				@SuppressWarnings("index")
+				@NonNegative int endIndex = numberSquared.toString().indexOf("0");
 				leftDigits1 = new BigInteger(
 						numberSquared.toString().
-								substring(0, numberSquared.toString().indexOf("0")
+								substring(0, endIndex
 								)
 				);
 			}
+//			can't be negative since numberSquared is number^2 so it has length greater or equal to it
+			@SuppressWarnings("index")
+			@NonNegative int endIndex = numberSquared.toString().length() - number.length();
 			leftDigits2 = new BigInteger(
 					numberSquared.toString()
-							.substring(0, (numberSquared.toString().length() - number.length()))
+							.substring(0, endIndex)
 			);
-			BigInteger rightDigits = new BigInteger(numberSquared.toString().substring(numberSquared.toString().length() - number.length()));
+			BigInteger rightDigits = new BigInteger(numberSquared.toString().substring(endIndex));
 			String x = leftDigits1.add(rightDigits).toString();
 			String y = leftDigits2.add(rightDigits).toString();
 			return (number.equals(x)) || (number.equals(y));
